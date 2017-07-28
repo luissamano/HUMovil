@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HideUt Movil</string>
+    <string name="action_settings">About...</string>
+
+
+    <string name="btnPlanta">Planta</string>
+    <string name="btnOem">Armadora</string>
+    <string name="btnCons">Construcción</string>
+    <string name="btnProg">Programa</string>
+    <string name="btnWOA">Buscar</string>
+
+
+    <string name="btnBuscarOem">Buscar</string>
+
+    <string name="btnBuscarCons">Buscar</string>
+
+    <string name="btnBuscarProg">Buscar</string>
+
+    <string name="btnBuscarPlanta">Buscar</string>
+
+
+    <string name="etWOA">Numero de Lote(WOA)</string>
+
+
+</resources>

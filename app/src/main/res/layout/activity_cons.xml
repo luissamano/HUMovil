@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app"
+    tools:context="com.leondev.humovil.Activitys.ActivityCons">
+
+
+    <Spinner
+
+        android:id="@+id/spPlantaCons"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:drawable/bottom_bar"
+        android:popupBackground="@android:drawable/editbox_dropdown_dark_frame" />
+
+    <Spinner
+        android:id="@+id/spConsCons"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/bottom_bar"
+        android:popupBackground="@android:drawable/title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etInicioCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            android:text="aaaa-mm-dd"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/etFinalCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date"
+            android:text="aaaa-mm-dd"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBuscarCons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBuscarOem" />
+
+</LinearLayout>
