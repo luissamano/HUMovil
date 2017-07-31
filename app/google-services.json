@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "421941690560",
+    "firebase_url": "https://arcolmovil.firebaseio.com",
+    "project_id": "arcolmovil",
+    "storage_bucket": "arcolmovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421941690560:android:4f57e45a9714bf07",
+        "android_client_info": {
+          "package_name": "com.leondev.humovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421941690560-apklk50g6vem0jspb8652gb02uqdvvuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD31jaSSV8GyZo8uJeqs9_KSeqjX5JJxD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

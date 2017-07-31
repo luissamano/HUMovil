@@ -17,6 +17,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.leondev.humovil.Conexion.ComprovarConn;
+import com.microsoft.azure.mobile.MobileCenter;
+import com.microsoft.azure.mobile.analytics.Analytics;
+import com.microsoft.azure.mobile.crashes.Crashes;
+import com.microsoft.azure.mobile.push.Push;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        MobileCenter.start(getApplication(), "a3886684-abc4-4813-af84-960a8422134c",
+                Analytics.class, Crashes.class);
+
+        MobileCenter.start(getApplication(), "a3886684-abc4-4813-af84-,960a8422134c",
+                Push.class);
+
 
         ComprovarConn conn = new ComprovarConn();
         boolean conne = conn.isAccesoInternet();
@@ -47,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         //.setAction("Action", null).show();
+
+                Push.setEnabled(true);
+                Push.isEnabled();
 
                 LayoutInflater inflater = getLayoutInflater();
                 View dialoglayout = inflater.inflate(R.layout.activity_contacto, null);
@@ -123,4 +137,12 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Push.checkLaunchedFromNotification(this, intent);
+    }
+
+
 }
